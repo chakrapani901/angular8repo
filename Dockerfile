@@ -10,4 +10,4 @@ RUN npm install && npm run build:linux && \
 
 FROM base AS final
 WORKDIR /usr/share/nginx/html
-COPY --from=build /my-sample-app/dist
+COPY --from=build /my-sample-app/dist .
